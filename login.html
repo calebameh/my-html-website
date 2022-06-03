@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In &lsaquo; Caleb Ameh &#8212; Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!--   Navigation -->
+      <nav class="navbar">
+        <!--     logo -->
+        <div class="logo">
+          <img
+            src="https://www.calebameh.com/wp-content/uploads/2019/11/caleb-ameh.png"
+            alt="logo"
+            width="180px"
+            height="50px"
+          />
+        </div>
+
+        <!--     Navigation menu -->
+        <ul class="nav-links">
+          <!--       using checkbox hack -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- Navigation menus -->
+          <div class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main class="login-content" style="text-align: center;">
+      <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 30px;" ><a href="index.html">Powered by Caleb Ameh</a></h1>
+<!-- Login form using a table to format the alignement -->
+      <form name="loginform" id="loginform">
+        <table>
+          <tr>
+            <td><label for="user_login">Email Address:</label></td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                id="user_email"
+                size="25"
+              />
+            </td>
+          </tr>
+         
+          <tr>
+            <td><label for="user_pass">Password:</label></td>
+            <td><input
+              type="password"
+              name="pwd"
+              id="user_pass"
+              size="25"
+            /></label></td>
+          </tr>
+       </table>
+        <p style="text-align:center;">
+          <input
+            type="submit"
+            name="submit"
+            id="submit"
+            class="button button1"
+            value="Sign In"
+          />
+        </p>
+      </form>
+
+      <p style="padding-top: 20px;">
+        <a href="index.html">&larr; Go to Homepage</a>
+      </p>
+    </main>
+    <!-- footer area -->
+    <footer><p>@Copyright Caleb Ameh 2022 - All Rights Reserved.</p></footer>
+  </body>
+</html>

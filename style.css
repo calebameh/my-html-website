@@ -1,0 +1,380 @@
+body {
+    font-family: Verdana;
+}
+
+h1 {
+    font-family: cursive;
+    font-size: 50px;
+
+}
+
+html,
+body {
+    background-color: black;
+    color: #fff;
+}
+
+main{
+    margin-bottom: 200px;
+}
+
+header{
+    border-bottom: 1px #cccccc solid;
+    margin-bottom: 50px;
+
+}
+
+.body-content{
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bio-img {
+    float: right;
+}
+
+.bio-img img {
+    display: inline-block;
+}
+
+.button{
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.button1:hover{
+    background-color: teal;
+    color: black;
+}
+
+.button-section{
+    margin: 60px;
+   
+    
+}
+
+footer{
+    border-top: 1px #cccccc solid;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    padding: 4px;
+    float: left;
+}
+
+figcaption {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-family: cursive;
+    padding: 2px;
+    text-align: center;
+}
+
+
+
+
+/* Navbar styling */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+}
+
+.nav-links {
+    color: #fff;
+
+}
+
+/* Navbar menu styling*/
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    font-family: cursive;
+
+}
+
+.menu li:hover {
+    background-color: teal;
+    border-radius: 5px;
+    transition: 0.3s ease;
+
+}
+
+.menu li {
+    padding: 5px 14px;
+
+}
+
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: yellow;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+}
+
+/* selected link */
+a:active {
+    color: teal;
+}
+
+li {
+    list-style: none;
+}
+
+/*Responsive Navbar menu styling*/
+/* Using a checkbox hack */
+input[type=checkbox] {
+    display: none;
+}
+
+/*Hamburger menu*/
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* Applying media queries to navigation */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: teal;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: #4c9e9e;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+
+    .dropdown li:hover {
+        background-color: #4c9e9e;
+    }
+}
+
+/* general forms styling */
+input[type=text] {
+    border: 2px solid white;
+    border-radius: 10px;
+    background: black;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: black;
+    color: white;
+    
+}
+
+input[type=text]:focus {
+    outline: none;
+    border: 2px solid teal;
+}
+
+input[type=email] {
+    border: 2px solid white;
+    border-radius: 10px;
+    background: black;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: black;
+    color: white;
+
+}
+
+input[type=email]:focus {
+    outline: none;
+    border: 2px solid teal;
+}
+
+input[type=tel] {
+    border: 2px solid white;
+    border-radius: 10px;
+    background: black;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: black;
+    color: white;
+
+}
+
+input[type=tel]:focus {
+    outline: none;
+    border: 2px solid teal;
+}
+
+select {
+    border: 2px solid white;
+    border-radius: 10px;
+    background: black;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: black;
+    color: white;
+
+}
+
+input[type=password] {
+    border: 2px solid white;
+    border-radius: 10px;
+    background: black;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: black;
+    color: white;
+
+}
+
+input[type=password]:focus {
+    outline: none;
+    border: 2px solid teal;
+}
+
+
+textarea {
+    border: 2px solid white;
+    border-radius: 10px;
+    background: black;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: black;
+    color: white;
+
+}
+
+textarea:focus {
+    outline: none;
+    border: 2px solid teal;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+
+
+.form-button {
+    background-color: teal;
+    border: solid 2px white;
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+
+.form-button:hover {
+    background-color: white;
+    border: solid 2px teal;
+    color: black;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* styling for responsive registration form  */
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+/* login page main content area */
+
+.login-content {
+    max-width: 500px;
+    margin: auto;
+    background: teal;
+    padding: 20px;
+}
